@@ -56,3 +56,33 @@ console.log(imcpersona1);
 console.log(edadpersona1);
 persona1.printAll();
 persona1.printHobbies();
+
+
+
+
+
+class Contacts {
+
+    constructor() 
+    {
+        this.persons = [];
+    }
+
+    printPersons() 
+    {
+        this.persons.forEach(person => person.printAll());
+    }
+}
+
+
+let contacts =  new Contacts();
+
+let persona2 = new Person ("Ana", "Perez", 70, 165, 1997, ["leer", "dormir", "TV", "pasear"])
+
+contacts.persons.push(persona1);
+
+contacts.persons.push(persona2);
+
+contacts.printPersons();
+
+
