@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var person_1 = require("./person");
+var person = new person_1.Person("Pepa Pig", 24, "85 Cañada de la Viña");
+console.log(person.name);
+console.log(person.age);
+person.printName();
+console.log(person.yearOfBirth(2023));
+console.log(person.getAddress());
+person.setAddress("85, Cañada de la Viña");
+console.log(person.getAddress());
